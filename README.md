@@ -58,5 +58,6 @@ write: cat .git/HEAD
    - git show-ref --tags: list all tags and what commit they are pointing too
    - git show-ref --points-at {commit} : list all tags pointing at a commit 
 
+-Branch vs Tag: branch pointer changes with every new commit but the commit a tag is pointing to is a snapshot like v1.1 or something and it doesnt change once created.
 
  
