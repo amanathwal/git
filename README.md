@@ -24,3 +24,6 @@ Save uncommited work. The stash is safe from destructive operations.
 3. git stash show stash@{0} : shoe the contents of a stash 
 4. git stash apply: apply the last stash
 5. git stash apply stash@{0} : apply a specific stash
+6. git stash --include-untracked : keep untracked files, this  will stash even files not tracked by git yet
+7. git stash --all: use with caution, stash all files(even ignored ones)
+ 
