@@ -17,8 +17,7 @@ Empty Staging area is not empty it is copy of latest commit
 
 
 ====== Stash====
-1. Save uncommited work
-2. The stash is safe from destructive operations.
+Save uncommited work. The stash is safe from destructive operations.
 
 1. git stash : stash changes 
 2. git stash list: list changes/stash list
