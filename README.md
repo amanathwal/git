@@ -51,7 +51,10 @@ write: cat .git/HEAD
          * git tag my-first-commit: will create a new tag and point it to value in HEAD
   
 - Annotated Tags : it also points to a commit but stores additional information like author, message, date.
-   - git tag -a 
+   - git tag -a {tag name} -m {message}
+   
+   - git tag: to list all the tags 
+   - git show {tagname}
 
 
  
