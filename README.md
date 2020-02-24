@@ -22,5 +22,5 @@ Save uncommited work. The stash is safe from destructive operations.
 1. git stash : stash changes 
 2. git stash list: list changes/stash list
 3. git stash show stash@{0} : shoe the contents of a stash 
-4. git stash apply: apply a stash 
+4. git stash apply: apply the last stash
 5. git stash apply stash@{0} : apply a specific stash
