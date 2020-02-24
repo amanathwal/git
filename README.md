@@ -27,4 +27,7 @@ Save uncommited work. The stash is safe from destructive operations.
 5. git stash apply stash@{0} : apply a specific stash
 6. git stash --include-untracked : keep untracked files, this  will stash even files not tracked by git yet, if you apply them untracked files will still be untracked.
 7. git stash --all: use with caution, stash all files(even ignored ones)
+8. git stash save "WIP: making progress on something": name stashes for easy reference 
+9. git stash branch <optional stash name> : start a new branch from a stash 
+10. git checkout <stash name> -- <filename> : grab a single file from a stash
  
