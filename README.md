@@ -54,7 +54,7 @@ write: cat .git/HEAD
    - git tag -a {tag name} -m {message}
    
    - git tag: to list all the tags 
-   - git show {tagname}
+   - git show {tagname}: get all the info about the tag
 
 
  
