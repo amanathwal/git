@@ -47,7 +47,7 @@ name of the current branch. But it can point to a commit too (detached HEAD). To
 write: cat .git/HEAD
    
 - **Tags**: Simple pointers to a commit. When you create a tag with no argument it just captures the value in HEAD 
-  - git tag my-first-commit
+  - git tag my-first-commit: will create a new tag and point it to value in HEAD
 
 
  
