@@ -53,8 +53,10 @@ write: cat .git/HEAD
 - Annotated Tags : it also points to a commit but stores additional information like author, message, date.
    - git tag -a {tag name} -m {message}
    
-   - git tag: to list all the tags 
+   - git tag: to list all the tags in a repo
    - git show {tagname}: get all the info about the tag
+   - git show-ref --tags: list all tags and what commit they are pointing too
+   - git show-ref --points-at {commit} : list all tags pointing at a commit 
 
 
  
