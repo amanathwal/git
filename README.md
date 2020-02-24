@@ -46,7 +46,8 @@ There are 3 types of git references
 name of the current branch. But it can point to a commit too (detached HEAD). To see what the head is pointing to
 write: cat .git/HEAD
    
-- **Tags**: Simple pointers to a commit 
+- **Tags**: Simple pointers to a commit. When you create a tag with no argument it just captures the value in HEAD 
+  - git tag my-first-commit
 
 
  
