@@ -50,7 +50,7 @@ write: cat .git/HEAD
    - **Lightweight Tags**: Simple pointers to a commit. When you create a tag with no argument it just captures the value in     HEAD 
          * git tag my-first-commit: will create a new tag and point it to value in HEAD
   
-- Annotated Tags : it also points to a commit but stores additional information like author, message, date.
+- **Annotated Tags** : it also points to a commit but stores additional information like author, message, date.
    - git tag -a {tag name} -m {message}
    
    - git tag: to list all the tags in a repo
@@ -58,6 +58,6 @@ write: cat .git/HEAD
    - git show-ref --tags: list all tags and what commit they are pointing too
    - git show-ref --points-at {commit} : list all tags pointing at a commit 
 
--Branch vs Tag: branch pointer changes with every new commit but the commit a tag is pointing to is a snapshot like v1.1 or something and it doesnt change once created.
+- **Branch vs Tag**: branch pointer changes with every new commit but the commit a tag is pointing to is a snapshot like v1.1 or something and it doesnt change once created.
 
  
