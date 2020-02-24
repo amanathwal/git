@@ -47,7 +47,7 @@ name of the current branch. But it can point to a commit too (detached HEAD). To
 write: cat .git/HEAD
     
     
-    
+  -**Tags**: Simple pointers to a commit 
 
 
  
