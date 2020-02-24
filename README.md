@@ -38,5 +38,15 @@ Save uncommited work. The stash is safe from destructive operations.
 
 ==============References===========
 
+References are pointers to commits. 
+There are 3 types of git references 
+- Tags and annotated tags 
+- Branches : a pointer to a particular commit
+- HEAD : how git knows what branch you are currently on and what the next parent will be, its a pointer and points to the 
+name of the current branch. But it can point to a commit too (detached HEAD)
+    
+    
+    
+
 
  
