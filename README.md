@@ -75,6 +75,13 @@ Are just commits but have more than one parent.
 
 * git cat-file -p { commit number } this will show you the parents for a commit 
 
+
+===== Fast Forwarding Commit===
+if you are in a branch and you checkout master or some other branch sometimes you see fast-forwarding, this happens 
+when  there is a clear path from source branch to target branch commit. Like 
+you checked out a branch b from a branch a and then there were no commits in branch a while you made commits to branch b and then when you checkout branch a you will see a fast-forwarding message.
+
+
 =====Miscellaneous===
 1. git show-ref --heads : to show what commits all the existing branches point to.
 2. git --no-pager log --oneline: so that logs open in same terminal without pagination
