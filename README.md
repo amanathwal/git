@@ -42,7 +42,8 @@ References are pointers to commits.
 There are 3 types of git references 
 - Tags and annotated tags 
 - Branches : a pointer to a particular commit
-- HEAD : how git knows what branch you are currently on and what the next parent will be, its a pointer and points to the 
+- HEAD : how git knows what branch you are currently on and what the next parent will be, its a pointer and 
+to the 
 name of the current branch. But it can point to a commit too (detached HEAD). To see what the head is pointing to
 write: cat .git/HEAD
 
@@ -67,4 +68,10 @@ if you checkin a commit and you dont do anything to reference it, it gets lost m
 garbage collected so create a branch out of last commit.
 
 1. git branch {new branch name} {commit}: create a branch that points to **last** commit in the detached state. This creates a permanent reference.
+
+
+
+=====Miscellaneous===
+1. git show-ref --heads : to show what commits all the existing branches point to.
+2. git --no-pager log --oneline: so that logs open in same terminal without pagination
  
