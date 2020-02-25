@@ -103,7 +103,9 @@ you checked out a branch b from a branch a and then there were no commits in bra
    - git log --grep <regexp>: helps find commits whose commit message matches this regular expression
    - git log --author=aman
    - git log --diff-filter=R --stat: different filters to track down files if they are added(A), deleted(D), modified(M)
- 
+   - git log --oneline 
+   - git log --graph : show graph like view 
+   - git log --no-pager: show 
  
  ==== **HAT (^) vs Tilda(~)**===
  its way of referencing commits. 
@@ -114,7 +116,8 @@ you checked out a branch b from a branch a and then there were no commits in bra
  
   ^ and ~ can be combined 
   
-  =====
+  ===== Show commits ===
+  1. git show <commit>
  
    
    
