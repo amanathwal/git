@@ -69,7 +69,11 @@ garbage collected so create a branch out of last commit.
 
 1. git branch {new branch name} {commit}: create a branch that points to **last** commit in the detached state. This creates a permanent reference.
 
+==== Merge Commits===
 
+Are just commits but have more than one parent.
+
+* git cat-file -p { commit number } this will show you the parents for a commit 
 
 =====Miscellaneous===
 1. git show-ref --heads : to show what commits all the existing branches point to.
