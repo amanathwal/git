@@ -94,6 +94,18 @@ you checked out a branch b from a branch a and then there were no commits in bra
    
    to enable git rerere: git config rerere.enabled true for per project bases or use --global flag to enable it for everybody. Now if u have a merge conflict and you resolve it and then checkin the file the get rerere will save the resolution and if same conflict appears in future it will auto resolve it. We can use 
    git rerere to see the merge conflicts
+   
+   ** Logs **
+    - git log : get the logs 
+    - git log --since="yesterday" 
+      git log --since="2 weeks ago"
+    - git log --name-status --follow --<file>: --follow helps to track the files that have been moved on renamed, --name-status tracks the filename when the change happened
+   - git log --grep <regexp>: helps find commits whose commit message matches this regular expression
+   - git log --author=aman
+   - git log --diff-filter=R --stat: different filters to track down files if they are added(A), deleted(D), modified(M)
+   -
+   
+   
 
 
 =====Miscellaneous===
