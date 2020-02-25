@@ -60,4 +60,11 @@ write: cat .git/HEAD
 
 - **Branch vs Tag**: branch pointer changes with every new commit but the commit a tag is pointing to is a snapshot like v1.1 or something and it doesnt change once created.
 
+
+==== HEAD-LESS/DETACHED HEAD======
+This happens when you checkout a specific commit or a tag, which means HEAD will start pointing to a commit.
+if you checkin a commit and you dont do anything to reference it, it gets lost means they are dangling commits which will be 
+garbage collected so create a branch out of last commit.
+
+1. git branch {new branch name} {commit}: create a branch that points to **last** commit in the detached state. This creates a permanent reference.
  
