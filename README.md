@@ -95,7 +95,7 @@ you checked out a branch b from a branch a and then there were no commits in bra
    to enable git rerere: git config rerere.enabled true for per project bases or use --global flag to enable it for everybody. Now if u have a merge conflict and you resolve it and then checkin the file the get rerere will save the resolution and if same conflict appears in future it will auto resolve it. We can use 
    git rerere to see the merge conflicts
    
-   ** Logs **
+  === ** Logs ** ==
     - git log : get the logs 
     - git log --since="yesterday" 
       git log --since="2 weeks ago"
@@ -103,7 +103,19 @@ you checked out a branch b from a branch a and then there were no commits in bra
    - git log --grep <regexp>: helps find commits whose commit message matches this regular expression
    - git log --author=aman
    - git log --diff-filter=R --stat: different filters to track down files if they are added(A), deleted(D), modified(M)
-   -
+ 
+ 
+ ==== **HAT (^) vs Tilda(~)**===
+ its way of referencing commits. 
+ - ^1 == no args: the first parent commit 
+ - ^n: the nth parent commit 
+ - no args === ~1 : the first commit back following the 1st parent 
+ - ~n: number of commits back following only the first parent
+ 
+  ^ and ~ can be combined 
+  
+  =====
+ 
    
    
 
