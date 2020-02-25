@@ -85,7 +85,15 @@ you checked out a branch b from a branch a and then there were no commits in bra
 
 * git merge --no-ff branchname : not fast forwarding but this will have a merge commit even when isnt necessary
 
-
+   **Merge Conflicts** 
+   If the content cannot be automatically merged when you run the command *git merge {merge id}* 
+   we will see a conflict git stops until the conflicts are resolved. Git will create a new file which 
+   will contain those conflicts.We can edit and commit the changes. A tool we can use to help with is 
+   git rerere- reuse recorded resolution, it will basically save your resolution and can use it to 
+   merge future changes. it helps with rebasing and long lived feature branch.
+   
+   to enable git rerere: git config rerere.enabled true for per project bases or use --global flag to enable it for everybody. Now if u have a merge conflict and you resolve it and then checkin the file the get rerere will save the resolution and if same conflict appears in future it will auto resolve it. We can use 
+   git rerere to see the merge conflicts
 
 
 =====Miscellaneous===
