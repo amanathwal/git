@@ -78,11 +78,14 @@ Are just commits but have more than one parent.
 
 ===== Fast Forwarding Commit===
 
-if you are in a branch and you checkout master or some other branch sometimes you see fast-forwarding, this happens 
+if you are in a branch and you checkout master or merge some other branch 
+like this git merge branchname, sometimes you see fast-forwarding, this happens 
 when  there is a clear path from source branch to target branch commit. Like 
-you checked out a branch b from a branch a and then there were no commits in branch a while you made commits to branch b and then when you checkout branch a you will see a fast-forwarding message. This means all commits from b were applied on top of a and then pointer for a was moved. But with this you might loose track of the work done only in branch b. 
+you checked out a branch b from a branch a and then there were no commits in branch a while you made commits to branch b and then when you checkout branch a and try to merge branch b you will see a fast-forwarding message. This means all commits from b were applied on top of a and then pointer for a was moved. But with this you might loose track of the work done only in branch b. 
 
-* git merge --NO-FF : not fast forwarding but this will have a merge commit even when isnt necessary
+* git merge --no-ff branchname : not fast forwarding but this will have a merge commit even when isnt necessary
+
+
 
 
 =====Miscellaneous===
