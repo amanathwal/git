@@ -126,7 +126,15 @@ you checked out a branch b from a branch a and then there were no commits in bra
   
   
   ==== Diff====
+  1. git diff: unstaged changes from repo, we can pass file arguments to see the difference in the file
+  2. git diff --staged : staged changes from repo
+  3. git diff {branch1} {branch2}
   
+  ======= Branches =====
+  1. git checkout -b {branch name} : create a branch and open it 
+  2. git branch --merged master: what branches are merged with master and can be cleaned up
+  3. git branch --no-merged master: which branches are not merged with master
+  4. git checkout -f {branch name} : will force the checkout and will override any changes
  
    
    
@@ -135,4 +143,5 @@ you checked out a branch b from a branch a and then there were no commits in bra
 =====Miscellaneous===
 1. git show-ref --heads : to show what commits all the existing branches point to.
 2. git --no-pager log --oneline: so that logs open in same terminal without pagination
+3. 
  
