@@ -168,6 +168,14 @@ you checked out a branch b from a branch a and then there were no commits in bra
    
   git reset can change history. 
   
+  4. git reset {file} : doesnt move the HEAD pointer but only gets that file and moves it to the staging area, like --mixed
+  5. git reset { commit }  -- {file} : it resets the staging area for that file. it doesnt work with any flags, like soft or hard
+  
+  6. git reset ORIG_HEAD : undo a git reset with original HEAD, git keeps a reference to previous value of HEAD in variable called ORIG_HEAD
+  
+  ========**Git Revert**===
+  git revert: creates a new commit that introduces the opposite changes from the specified commit.Original commit stays in history. Revert doesnot change history. Use revert if you are undoing a change that has been committed.
+  
   
   
  
