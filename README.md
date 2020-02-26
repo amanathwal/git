@@ -105,7 +105,7 @@ you checked out a branch b from a branch a and then there were no commits in bra
    - git log --diff-filter=R --stat: different filters to track down files if they are added(A), deleted(D), modified(M)
    - git log --oneline 
    - git log --graph : show graph like view 
-   - git log --no-pager: show 
+   - git --no-pager log: show no pagination but entire history
  
  ==== **HAT (^) vs Tilda(~)**===
  its way of referencing commits. 
@@ -117,7 +117,10 @@ you checked out a branch b from a branch a and then there were no commits in bra
   ^ and ~ can be combined 
   
   ===== Show commits ===
-  1. git show <commit>
+  1. git show {commit}: show commit contents 
+  2. git show {commit} --stat: show the files changed in the commit 
+  3. git show {commit}:{file} : look at file from another commit 
+  
  
    
    
