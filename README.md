@@ -117,9 +117,15 @@ you checked out a branch b from a branch a and then there were no commits in bra
   ^ and ~ can be combined 
   
   ===== Show commits ===
+  
+  git show works on any reference.
+  
   1. git show {commit}: show commit contents 
   2. git show {commit} --stat: show the files changed in the commit 
   3. git show {commit}:{file} : look at file from another commit 
+  
+  
+  ==== Diff====
   
  
    
