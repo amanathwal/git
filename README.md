@@ -13,7 +13,7 @@ Empty Staging area is not empty it is copy of latest commit
 
 1. git add <filename> : to add a file to staging area
 2. git rm <filename>: remove a file and put it in staging area
-3. git mv <file>: rename the file
+3. git mv <old file name> <New file name>: rename the file
 
 
 ====== Stash====
@@ -95,17 +95,18 @@ you checked out a branch b from a branch a and then there were no commits in bra
    to enable git rerere: git config rerere.enabled true for per project bases or use --global flag to enable it for everybody. Now if u have a merge conflict and you resolve it and then checkin the file the get rerere will save the resolution and if same conflict appears in future it will auto resolve it. We can use 
    git rerere to see the merge conflicts
    
-  === ** Logs ** ==
+  === **Logs** ==
     - git log : get the logs 
     - git log --since="yesterday" 
       git log --since="2 weeks ago"
     - git log --name-status --follow --<file>: --follow helps to track the files that have been moved on renamed, --name-status tracks the filename when the change happened
-   - git log --grep <regexp>: helps find commits whose commit message matches this regular expression
+   - git log --grep=<regexp>: helps find commits whose commit message matches this regular expression
    - git log --author=aman
    - git log --diff-filter=R --stat: different filters to track down files if they are added(A), deleted(D), modified(M)
    - git log --oneline 
    - git log --graph : show graph like view 
    - git --no-pager log: show no pagination but entire history
+   - git log --name-status --follow --oneline {filename}  : --follow lets you follow the file all the way
  
  ==== **HAT (^) vs Tilda(~)**===
  its way of referencing commits. 
@@ -116,7 +117,7 @@ you checked out a branch b from a branch a and then there were no commits in bra
  
   ^ and ~ can be combined 
   
-  ===== Show commits ===
+  ===== **Show commits** ===
   
   git show works on any reference.
   
@@ -125,16 +126,23 @@ you checked out a branch b from a branch a and then there were no commits in bra
   3. git show {commit}:{file} : look at file from another commit 
   
   
-  ==== Diff====
+  ==== **Diff**====
   1. git diff: unstaged changes from repo, we can pass file arguments to see the difference in the file
   2. git diff --staged : staged changes from repo
   3. git diff {branch1} {branch2}
   
-  ======= Branches =====
+  ======= **Branches** =====
   1. git checkout -b {branch name} : create a branch and open it 
   2. git branch --merged master: what branches are merged with master and can be cleaned up
   3. git branch --no-merged master: which branches are not merged with master
   4. git checkout -f {branch name} : will force the checkout and will override any changes
+  
+  
+  
+  ===**Checkout**====
+  
+  
+  
  
    
    
