@@ -166,8 +166,7 @@ you checked out a branch b from a branch a and then there were no commits in bra
    2. git reset --soft HEAD~: not used frequently, all it does is it moves the HEAD pointer and branch.
    3.git reset --hard HEAD~: first it moves HEAD and branch , then it moves files from repo to staging and then staging area. This is a destructive operation.
    
-    
-    
+  git reset can change history. 
   
   
   
