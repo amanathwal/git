@@ -141,6 +141,17 @@ you checked out a branch b from a branch a and then there were no commits in bra
   
   ===**Checkout**====
   
+ 1. git checkout {branch name}: When we checkout a branch, we move the HEAD pointer to branch and then copy over that commit to staging area followed by 
+  working area. Any existing new changes, unless they conflict with the changes in branch are kept.
+ 2. git checkout -- {file path}:   
+  When we checkout a file, it replace the working area copy with the version from the current staging area. This will overwrite changes to your file. 
+ 3. git checkout {commit} -- {file path}: update the staging area to match the commit, update the working area to match the staging area. this will overwrite files in working and staging area.
+    - git checkout {deleting commit}^ -- {file path} : restore a deleted file
+    
+    
+    ====**Clean**==
+    
+  
   
   
  
