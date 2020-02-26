@@ -107,6 +107,7 @@ you checked out a branch b from a branch a and then there were no commits in bra
    - git log --graph : show graph like view 
    - git --no-pager log: show no pagination but entire history
    - git log --name-status --follow --oneline {filename}  : --follow lets you follow the file all the way
+   - git log -n 2 : show last 2 commits
  
  ==== **HAT (^) vs Tilda(~)**===
  its way of referencing commits. 
