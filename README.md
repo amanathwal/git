@@ -150,6 +150,22 @@ you checked out a branch b from a branch a and then there were no commits in bra
     
     
     ====**Clean**==
+    1. git clean: it cleans working area by removing untracked files.
+    2. git clean --dry-run : it will tell you what will be deleted, -f flag will do the deletion
+    3. git clean -d : will delete both files and directories
+   
+   
+   ==== **RESET**===
+   Performs different actions based on arguments. 
+   Checkout vs Reset : Checkout will only move head but branch stays intact but with RESET branch will be modified.
+   
+   For commits: it moves the HEAD pointer and optionally modifies files
+   For file paths: does not move the HEAD pointer but modifies files.
+   
+   1. git reset --mixed: default , it moves the HEAD  to parent commit and then it copies the files from the new commit to the staging area. 
+   2. git reset --soft HEAD~: not used frequently, all it does is it moves the HEAD pointer.
+   
+    
     
   
   
