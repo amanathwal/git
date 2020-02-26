@@ -165,6 +165,7 @@ you checked out a branch b from a branch a and then there were no commits in bra
    1. git reset --mixed: default , it moves the HEAD and branch  to parent commit and then it copies the files from the new commit to the staging area. so its called a unstaging command since working area will have the changes now.
    Example to unstage a file: git reset -- {file}
    2. git reset --soft HEAD~: not used frequently, all it does is it moves the HEAD pointer and branch.
+   
    3.git reset --hard HEAD~: first it moves HEAD and branch , then it moves files from repo to staging and then staging area. This is a destructive operation.
    
   git reset can change history. 
