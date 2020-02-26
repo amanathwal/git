@@ -157,13 +157,14 @@ you checked out a branch b from a branch a and then there were no commits in bra
    
    ==== **RESET**===
    Performs different actions based on arguments. 
-   Checkout vs Reset : Checkout will only move head but branch stays intact but with RESET branch will be modified.
+   Checkout vs Reset : Checkout will only move HEAD but branch stays intact but with RESET branch will be moved too.
    
    For commits: it moves the HEAD pointer and optionally modifies files
    For file paths: does not move the HEAD pointer but modifies files.
    
-   1. git reset --mixed: default , it moves the HEAD  to parent commit and then it copies the files from the new commit to the staging area. 
-   2. git reset --soft HEAD~: not used frequently, all it does is it moves the HEAD pointer.
+   1. git reset --mixed: default , it moves the HEAD and branch  to parent commit and then it copies the files from the new commit to the staging area. so its called a unstaging command since working area will have the changes now.
+   2. git reset --soft HEAD~: not used frequently, all it does is it moves the HEAD pointer and branch.
+   3.git reset --hard HEAD~: first it moves HEAD and branch , then it moves files from repo to staging and then staging area. This is a destructive operation.
    
     
     
